@@ -1,0 +1,65 @@
+.progress_circle_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress_circle {
+  --pct: 0;
+  --size: 150px;
+  --thickness: 12px;
+  --color: var(--bg-primary);
+  --track: var(--bg-muted);
+  --bg: var(--bg-white);
+
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  font-family: system-ui, sans-serif;
+
+  // Progress ring
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(
+      var(--color) 0 calc(var(--pct) * 1%),
+      var(--track) calc(var(--pct) * 1%) 1turn
+    );
+    transition: background var(--transition) ease;
+  }
+
+  // Inner circle (to create ring effect)
+  &::after {
+    content: "";
+    position: absolute;
+    left: var(--thickness);
+    top: var(--thickness);
+    right: var(--thickness);
+    bottom: var(--thickness);
+    border-radius: 50%;
+    background: var(--bg);
+  }
+
+  .progress_circle_value {
+    position: relative;
+    z-index: 1;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: calc(var(--size) * 0.15);
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+  }
+}
+
+.progress_circle_title {
+  padding-top: 10px;
+  font-weight: bold;
+  color: var(--text-primary);
+}

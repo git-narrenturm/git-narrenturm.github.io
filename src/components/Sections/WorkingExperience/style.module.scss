@@ -1,0 +1,137 @@
+.section {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: var(--bg-primary);
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+  }
+}
+
+.section_box_right,
+.section_box_left {
+  display: flex;
+  position: relative;
+  transition: all 0.3s;
+
+  .section_box_year {
+    position: relative;
+    align-content: center;
+
+    h1 {
+      position: relative;
+      transition: color 0.3s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--bg-primary);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 3px solid var(--bg-white);
+        transition: all 0.3s;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+  }
+
+  .section_box_info {
+    padding: 0 20px;
+
+    h2 {
+      position: relative;
+      transition: color 0.3s;
+      font-weight: bold;
+    }
+
+    .section_box_badge_list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+
+      .section_box_badge {
+        font-size: 12px;
+        white-space: nowrap;
+        background-color: var(--bg-secondary);
+        color: var(--text-white);
+        padding: 2px 6px;
+      }
+    }
+  }
+
+  &.section_box_right {
+    flex-direction: row;
+    padding-left: 20px;
+
+    .section_box_year h1::after {
+      left: -30px;
+    }
+  }
+
+  &.section_box_left {
+    text-align: right;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+
+    .section_box_year h1::after {
+      right: -30px;
+    }
+
+    // responsive override
+    @media (max-width: 768px) {
+      flex-direction: row;
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 0px;
+
+      .section_box_year h1::after {
+        left: -30px;
+        right: auto;
+      }
+    }
+  }
+
+  &:hover {
+    .section_box_year h1::after {
+      background-color: var(--text-highlight) !important;
+      transition: all 0.3s;
+    }
+
+    .section_box_year h1 {
+      color: var(--text-highlight) !important;
+      transition: all 0.3s;
+    }
+
+    .section_box_year p {
+      color: var(--text-primary) !important;
+      transition: all 0.3s;
+    }
+
+    .section_box_info .section_box_badge_list .section_box_badge {
+      background-color: var(--bg-highlight);
+      transition: all 0.3s;
+    }
+  }
+}

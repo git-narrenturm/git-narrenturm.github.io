@@ -1,0 +1,70 @@
+.section {
+  width: 100%;
+  margin: 0 auto;
+}
+.section_title {
+  display: flex;
+  justify-content: center; // center the title group horizontally
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.title_inner {
+  position: relative;
+  display: inline-flex; // shrink-wrap to h1 width
+  flex-direction: column; // stack h1 and p (p will be absolutely positioned though)
+  align-items: center;
+}
+
+.title_inner h1 {
+  font-size: 40px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bg-primary);
+  }
+}
+
+/* subtitle placed at the right-bottom corner of the h1 */
+.subtitle {
+  position: absolute;
+  right: 0; /* align to the right edge of .title_inner (== h1 right edge) */
+  bottom: -5px; /* adjust vertical overlap with underline */
+  background-color: var(--bg-white, #fff);
+  padding-left: 10px;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--text-highlight, #f6483b);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  pointer-events: none; /* optional: makes subtitle not intercept clicks */
+}
+
+/* small responsive tweak so it doesn't overflow on very small screens */
+@media (max-width: 420px) {
+  .title_inner h1 {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+  .subtitle {
+    bottom: -8px;
+    font-size: 12px;
+    padding-left: 8px;
+  }
+}
+
+.section_body {
+  padding: 50px 20px 20px 20px;
+}

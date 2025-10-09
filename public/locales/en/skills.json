@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "databases": "Database",
+    "testing": "Testing",
+    "integrations": "Integrations",
+    "other": "Other"
+  },
+  "level": {
+    "novice": "Novice",
+    "begginer": "Advanced",
+    "competent": "Competent",
+    "proficient": "Proficient",
+    "expert": "Expert"
+  }
+}

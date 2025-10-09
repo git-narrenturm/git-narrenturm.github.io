@@ -1,0 +1,27 @@
+.social_wrapper {
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.logo_wrapper {
+  height: 100%;
+
+  .logo_badge {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+.logo_image {
+  filter: grayscale(1);
+  transition: all 0.5s;
+
+  &:hover {
+    filter: grayscale(0);
+    transition: all 0.5s;
+  }
+}

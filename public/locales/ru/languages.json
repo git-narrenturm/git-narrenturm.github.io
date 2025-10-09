@@ -1,0 +1,7 @@
+{
+    "languages": [
+        { "title": "Русский", "level": "Родной", "dataLabel": "" },
+        { "title": "Английский", "level": "B2","dataLabel": "Upper Intermediate Level" },
+        { "title": "Латышский", "level": "B2", "dataLabel": "Otrā vidējā pakāpe" }
+    ]
+}

@@ -1,0 +1,25 @@
+.btn-primary {
+  height: 50px;
+  line-height: 50px;
+  color: var(--text-white);
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 0px;
+  padding: 0 20px;
+  min-width: 140px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: var(--bg-highlight);
+  border: 1px solid var(--bg-highlight);
+  transition: all 0.3s;
+  &:hover,
+  &:focus {
+    color: var(--bg-highlight);
+    background-color: var(--text-white);
+    border: 1px solid var(--bg-highlight);
+    transition: all 0.3s;
+  }
+}

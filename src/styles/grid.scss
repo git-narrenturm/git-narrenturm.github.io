@@ -1,0 +1,58 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^="col-"] {
+  box-sizing: border-box;
+}
+
+/* Column Width Mixin */
+@mixin col($n) {
+  flex: 0 0 calc(100% / 12 * #{$n});
+  max-width: calc(100% / 12 * #{$n});
+}
+
+/* Offset Mixin */
+@mixin col-offset($n, $columns: 12) {
+  margin-left: if($n == 0, 0, ($n / $columns) * 100%);
+}
+
+/* Base Columns */
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include col($i);
+  }
+}
+
+/* Base Offsets */
+@for $i from 0 through 11 {
+  .offset-#{$i} {
+    @include col-offset($i);
+  }
+}
+
+/* Breakpoints */
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@each $label, $size in $breakpoints {
+  @media (min-width: $size) {
+    @for $i from 1 through 12 {
+      .col-#{$label}-#{$i} {
+        @include col($i);
+      }
+    }
+
+    @for $i from 0 through 11 {
+      .offset-#{$label}-#{$i} {
+        @include col-offset($i);
+      }
+    }
+  }
+}

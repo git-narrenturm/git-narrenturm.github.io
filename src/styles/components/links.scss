@@ -1,0 +1,14 @@
+.link-primary {
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.link-primary:hover,
+.link-primary:focus {
+  color: var(--bg-highlight);
+  transition: all 0.3s;
+}
+
+.link-selected {
+  color: var(--bg-highlight);
+}

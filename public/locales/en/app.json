@@ -1,0 +1,9 @@
+{
+  "section": [
+    { "title": "About me", "subtitle": "Bio" },
+    { "title": "Working experience", "subtitle": "Involvement" },
+    { "title": "Skills", "subtitle": "Proficient at" },
+    { "title": "Languages", "subtitle": "Levels" },
+    { "title": "Profiles", "subtitle": "Social" }
+  ]
+}
