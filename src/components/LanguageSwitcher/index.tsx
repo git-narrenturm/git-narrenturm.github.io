@@ -1,28 +1,37 @@
+import React from "react";
 import style from "./style.module.scss";
-
 import { useTranslation } from "react-i18next";
 
-const languages = [
+interface Language {
+  code: string;
+  label: string;
+}
+
+const languages: Language[] = [
   { code: "en", label: "EN" },
   { code: "ru", label: "RU" },
 ];
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
   const currentLang = i18n.resolvedLanguage || "en";
+
+  const changeLanguage = (lang: string) => {
+    if (i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  };
 
   return (
     <div className={style.section_switcher}>
       {languages.map((lang) => (
-        <a
+        <button
           key={lang.code}
-          href={`/${lang.code}/`}
-          className={`link-primary ${
-            lang.code === currentLang ? `link-selected` : ``
-          }`}
+          onClick={() => changeLanguage(lang.code)}
+          className={`link link-primary ${lang.code === currentLang ? "link-selected" : ""}`}
         >
           {lang.label}
-        </a>
+        </button>
       ))}
     </div>
   );

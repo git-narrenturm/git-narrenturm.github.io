@@ -16,53 +16,53 @@ import SectionSocial from "./components/Sections/Social";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const App = () => {
-const { i18n } = useTranslation();
- useEffect(() => {
-    const pathLang = window.location.pathname.split("/")[1];
-    if (pathLang && i18n.language !== pathLang) {
-      i18n.changeLanguage(pathLang);
-    }
-  }, [i18n]);
-console.log("Detected path:", window.location.pathname.split("/"));
-
   const { t: translate } = useTranslation(["app"]);
- 
 
   return (
     <main>
       <div className="container">
         <div className="row">
           <div className="col-12">
-           <LanguageSwitcher />
+            <LanguageSwitcher />
           </div>
         </div>
         <div className="row">
           <Section>
-            <Section.Title subtitle={translate("section.0.subtitle")}>{translate("section.0.title")}</Section.Title>
+            <Section.Title subtitle={translate("section.0.subtitle")}>
+              {translate("section.0.title")}
+            </Section.Title>
             <Section.Body>
               <SectionAbout />
             </Section.Body>
           </Section>
           <Section>
-            <Section.Title subtitle={translate("section.1.subtitle")}>{translate("section.1.title")}</Section.Title>
+            <Section.Title subtitle={translate("section.1.subtitle")}>
+              {translate("section.1.title")}
+            </Section.Title>
             <Section.Body>
               <SectionWorkingExperience />
             </Section.Body>
           </Section>
           <Section>
-            <Section.Title subtitle={translate("section.2.subtitle")}>{translate("section.2.title")}</Section.Title>
+            <Section.Title subtitle={translate("section.2.subtitle")}>
+              {translate("section.2.title")}
+            </Section.Title>
             <Section.Body>
               <SectionSkills />
             </Section.Body>
           </Section>
           <Section>
-            <Section.Title subtitle={translate("section.3.subtitle")}>{translate("section.3.title")}</Section.Title>
+            <Section.Title subtitle={translate("section.3.subtitle")}>
+              {translate("section.3.title")}
+            </Section.Title>
             <Section.Body>
               <SectionLanguages />
             </Section.Body>
           </Section>
           <Section>
-            <Section.Title subtitle={translate("section.4.subtitle")}>{translate("section.4.title")}</Section.Title>
+            <Section.Title subtitle={translate("section.4.subtitle")}>
+              {translate("section.4.title")}
+            </Section.Title>
             <Section.Body>
               <SectionSocial />
             </Section.Body>
