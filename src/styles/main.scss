@@ -4,6 +4,11 @@
 @import url("./components/links.scss");
 @import url("./components/buttons.scss");
 
+#root {
+  margin: 0 auto;
+  width: 100%;
+}
+
 html {
   cursor: default;
 }

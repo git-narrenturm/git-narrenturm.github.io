@@ -6,7 +6,7 @@
       "city": "Nizhny Novgorod",
       "startDate": "2024-11-01",
       "endDate": "2025-07-31",
-      "description": "As a lead developer, designed and implemented scalable client-server solutions, developing system architecture and business logic for enterprise products. I led the implementation of a real-time positioning system that enabled the client to monitor personnel locations in real time, improving workplace safety and operational control. Additionally, I organized and optimized telemetry data collection and analysis, ensuring a stable data flow for predictive analytics and early detection of equipment failures. Provided technical support and product guidance to secure Skolkovo resident status.",
+      "description": "As a lead developer, designed and implemented scalable client-server solutions, developing system architecture and business logic for enterprise product. I led the implementation of a real-time positioning system that enabled the client to monitor personnel locations in real time, improving workplace safety and operational control. Additionally, I organized and optimized telemetry data collection and analysis, ensuring a stable data flow for predictive analytics and early detection of equipment failures. Provided technical support and product guidance to obtain Skolkovo resident status.",
       "technologies": [
         "Node.js",
         "Express.js",

@@ -1,7 +1,4 @@
-import "./App.css";
 import "./styles/main.scss";
-
-import { useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 
