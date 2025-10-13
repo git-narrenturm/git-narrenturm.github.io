@@ -12,7 +12,8 @@
   "buttons": {
     "download": {
       "title": "Скачать резюме",
-      "link": "#"
+      "filename": "Fullstack_JelenaR_CV_ru.pdf",
+      "link": "/files/2025-CV-JR-for-github-pages-ru.pdf"
     }
   }
 }
