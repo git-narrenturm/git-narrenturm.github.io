@@ -17,9 +17,9 @@ const SectionAbout = () => {
               ))}
             </ul>
           </p>
-          {/* <a href={translate("buttons.download.link")} className="btn-primary">
+          <a href={translate("buttons.download.link")} download={translate("buttons.download.filename")} className="btn-primary">
             {translate("buttons.download.title")}
-          </a> */}
+          </a>
         </div>
       </div>
     </div>

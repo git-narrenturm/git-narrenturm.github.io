@@ -12,7 +12,8 @@
   "buttons": {
     "download": {
       "title": "Download Resume",
-      "link": "#"
+      "filename": "Fullstack_JelenaR_CV_en.pdf",
+      "link": "/files/2025-CV-JR-for-github-pages-en.pdf"
     }
   }
 }

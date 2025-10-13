@@ -57,7 +57,7 @@ const SectionWorkingExperience = () => {
                     className={`col-lg-6 col-md-12 col-sm-12 col-xs-12 ${
                       index % 2 === 0
                         ? ``
-                        : `offset-lg-6 offset-md-6 offset-sm-0 offset-xs-0`
+                        : `offset-lg-6 offset-md-0 offset-sm-0 offset-xs-0`
                     }`}
                   >
                     <div

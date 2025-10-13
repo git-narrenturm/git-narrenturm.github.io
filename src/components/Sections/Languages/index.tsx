@@ -17,7 +17,7 @@ const SectionLanguages = () => {
   return (
     <div className="row">
       {list.map((item) => (
-        <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <div className={style.section_box} data-label={item.dataLabel}>
             <div className={style.section_box_details}>
               <h2>{item.title}</h2>
