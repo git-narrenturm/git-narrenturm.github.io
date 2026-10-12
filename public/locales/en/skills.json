@@ -1,17 +1,28 @@
 {
-  "sections": {
-    "backend": "Backend",
-    "frontend": "Frontend",
-    "databases": "Database",
-    "testing": "Testing",
-    "integrations": "Integrations",
-    "other": "Other"
-  },
-  "level": {
-    "novice": "Novice",
-    "begginer": "Advanced",
-    "competent": "Competent",
-    "proficient": "Proficient",
-    "expert": "Expert"
-  }
+  "items": [
+    {
+      "category": "Languages and frameworks",
+      "technologies": "TypeScript, JavaScript (ES6-ES13), Node.js, NestJS, Express.js, React, Redux Toolkit, Python, FastAPI, SQLAlchemy, SAP CAP with Node.js, SAPUI5, PHP"
+    },
+    {
+      "category": "Databases and caching",
+      "technologies": "PostgreSQL, MySQL, MSSQL (T-SQL), MongoDB, Redis, InfluxDB, Neo4j, SAP HANA."
+    },
+    {
+      "category": "Brokers and protocols",
+      "technologies": "RabbitMQ, Kafka, SAP EventMesh, WebSockets (Socket.io), MQTT, REST API, OData (v2/v4), SOAP, XML."
+    },
+    {
+      "category": "Infrastructure and DevOps",
+      "technologies": "Docker, Docker Compose, Kubernetes (stateless application architecture), GitLab CI/CD, Jenkins, GitHub Actions, Linux (SSH, bash), Nginx."
+    },
+    {
+      "category": "Testing and monitoring",
+      "technologies": "Jest, Chai, Mocha, PyTest, Apache JMeter, Grafana, Kibana, Graylog, SonarQube."
+    },
+    {
+      "category": "AI and LLM tooling",
+      "technologies": "Ollama, Gemma, RAG pipelines, intelligent search and embedding systems, Cursor."
+    }
+  ]
 }

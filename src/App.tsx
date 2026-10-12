@@ -37,7 +37,7 @@ const App = () => {
               {translate("section.1.title")}
             </Section.Title>
             <Section.Body>
-              <SectionWorkingExperience />
+              <SectionSkills />
             </Section.Body>
           </Section>
           <Section>
@@ -45,7 +45,7 @@ const App = () => {
               {translate("section.2.title")}
             </Section.Title>
             <Section.Body>
-              <SectionSkills />
+              <SectionWorkingExperience />
             </Section.Body>
           </Section>
           <Section>

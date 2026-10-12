@@ -1,17 +1,28 @@
 {
-  "sections": {
-    "backend": "Backend",
-    "frontend": "Frontend",
-    "databases": "Базы данных",
-    "testing": "Тестирование",
-    "integrations": "Интеграции",
-    "other": "Другое"
-  },
-  "level": {
-    "novice": "Новичок",
-    "begginer": "Продвинутый",
-    "competent": "Компетентный",
-    "proficient": "Опытный",
-    "expert": "Эксперт"
-  }
+  "items": [
+    {
+      "category": "Языки и фреймворки",
+      "technologies": "TypeScript, JavaScript (ES6-ES13), Node.js, NestJS, Express.js, React, Redux Toolkit, Python, FastAPI, SQLAlchemy, SAP CAP with Node.js, SAPUI5, PHP"
+    },
+    {
+      "category": "Базы данных & Кэш",
+      "technologies": "PostgreSQL, MySQL, MSSQL (T-SQL), MongoDB, Redis, InfluxDB, Neo4j, SAP HANA."
+    },
+    {
+      "category": "Брокеры & Протоколы",
+      "technologies": "RabbitMQ, Kafka, SAP EventMesh, WebSockets (Socket.io), MQTT, REST API, OData (v2/v4), SOAP, XML."
+    },
+    {
+      "category": "Инфраструктура & DevOps",
+      "technologies": "Docker, Docker Compose, Kubernetes (stateless-архитектура приложений), GitLab CI/CD, Jenkins, GitHub Actions, Linux (SSH, bash), Nginx."
+    },
+    {
+      "category": "Тестирование & Мониторинг",
+      "technologies": "Jest, Chai, Mocha, PyTest, Apache JMeter, Grafana, Kibana, Graylog, SonarQube."
+    },
+    {
+      "category": "AI & LLM контур",
+      "technologies": "Ollama, Gemma, RAG-пайплайны, системы умного поиска и эмбеддингов, Cursor."
+    }
+  ]
 }

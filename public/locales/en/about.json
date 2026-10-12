@@ -1,19 +1,30 @@
 {
-  "bio": [
-    "Experienced software developer with 5 years of commercial and business development experience building server-based and cloud-based applications using Node.js (Node.js + Express.js, SAP CAP with Node.js, SAPUI5, SAP BTP cloud solutions, microservices, and external system integrations)",
-    "Strong expertise in backend development, API design, system integration, and database management",
-    "Confident in frontend development, including React (Vite), ECMAScript6, and TypeScript",
-    "Worked in cross-functional teams on commercial projects involving multiple parallel workstreams across several teams",
-    "Well-versed in CI/CD principles with hands-on experience in configuring automated pipelines using GitHub Actions and Jenkins",
-    "Regularly engaged with stakeholders: participated in requirement discussions, feature planning, and product demos",
-    "Comfortable working in product teams and taking ownership of system components independently",
-    "Mentored junior developers as part of team development"
+  "intro": "Experienced full-stack developer with over 10 years of experience in IT and database architecture design, including more than 5.5 years focused on commercial development of distributed cloud applications, microservices, and web interfaces with Node.js (TypeScript) and React.",
+  "expertise": [
+    {
+      "title": "Backend expertise",
+      "description": "Deep knowledge of Node.js (NestJS, Express.js), asynchronous Python (FastAPI), enterprise development with SAP CAP (with Node.js), microservice architecture, and BFF and API Gateway patterns."
+    },
+    {
+      "title": "Frontend expertise",
+      "description": "Design of complex SPAs, interactive dashboards, and real-time interfaces with React (TypeScript, Redux Toolkit) following the FSD methodology. SAPUI5 development using vendor best practices."
+    },
+    {
+      "title": "Data and high load",
+      "description": "Strong experience with very large databases (180+ GB, 20+ million records), complex SQL query optimization, NoSQL (MongoDB), caching (Redis), and message queues (RabbitMQ, Kafka)."
+    },
+    {
+      "title": "AI/LLM engineering",
+      "description": "Hands-on experience deploying local AI environments (Ollama, Gemma) and designing end-to-end RAG pipelines."
+    }
   ],
+  "languagesLabel": "Languages",
+  "languages": "Russian (Native), English (B2 — fluent technical communication).",
   "buttons": {
     "download": {
       "title": "Download Resume",
       "filename": "Fullstack_JelenaR_CV_en.pdf",
-      "link": "/files/2025-CV-JR-for-github-pages-en.pdf"
+      "link": "/files/2026-CV-JR-en.pdf"
     }
   }
 }

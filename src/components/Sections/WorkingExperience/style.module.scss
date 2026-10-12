@@ -1,137 +1,107 @@
-.section {
-  display: inline-block;
-  width: 100%;
+.experience_list {
+  display: grid;
+  gap: 2rem;
+}
+
+.experience_item {
   position: relative;
-  z-index: 1;
+  margin-left: 3rem;
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid var(--bg-primary);
+  background-color: var(--bg-muted);
 
-  &:after {
-    content: "";
-    position: absolute;
-    background-color: var(--bg-primary);
-    width: 2px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: -1;
-
-    @media (max-width: 992px) {
-      margin: 0;
-    }
+  &:hover .technology_badge {
+    background-color: var(--bg-highlight);
   }
 }
 
-.section_box_right,
-.section_box_left {
+.experience_header {
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0.4rem 0 0;
+  }
+}
+
+.company {
+  font-weight: 600;
+}
+
+.period {
+  position: absolute;
+  top: 1.5rem;
+  right: calc(100% + 0.75rem);
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.experience_content {
+  h3 {
+    margin-top: 1.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0.5rem 0 0;
+  }
+
+  ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.5rem;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.technology_section {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--bg-secondary);
+
+  h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+.technology_list {
   display: flex;
-  position: relative;
-  transition: all 0.3s;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
 
-  .section_box_year {
-    position: relative;
-    align-content: center;
-
-    h1 {
-      position: relative;
-      transition: color 0.3s;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: var(--bg-primary);
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        border: 3px solid var(--bg-white);
-        transition: all 0.3s;
-      }
-    }
-
-    p {
-      margin: 0;
-      color: var(--text-muted);
-      font-size: 12px;
-    }
-  }
-
-  .section_box_info {
-    padding: 10px 20px;
-
-    h2 {
-      position: relative;
-      transition: color 0.3s;
-      font-weight: bold;
-    }
-
-    .section_box_badge_list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-
-      .section_box_badge {
-        font-size: 12px;
-        white-space: nowrap;
-        background-color: var(--bg-secondary);
-        color: var(--text-white);
-        padding: 2px 6px;
-      }
-    }
-  }
-
-  &.section_box_right {
-    flex-direction: row;
-    padding-left: 20px;
-
-    .section_box_year h1::after {
-      left: -30px;
-    }
-  }
-
-  &.section_box_left {
-    text-align: right;
-    flex-direction: row-reverse;
-    padding-right: 20px;
-
-    .section_box_year h1::after {
-      right: -30px;
-    }
-
-    // responsive override
-    @media (max-width: 992px) {
-      flex-direction: row;
-      text-align: left;
-      padding-left: 20px;
-      padding-right: 0px;
-
-      .section_box_year h1::after {
-        left: -30px;
-        right: auto;
-      }
-    }
-  }
+.technology_badge {
+  padding: 0.2rem 0.45rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-white);
+  font-size: 0.75rem;
+  transition: background-color 0.3s;
 
   &:hover {
-    .section_box_year h1::after {
-      background-color: var(--text-highlight) !important;
-      transition: all 0.3s;
-    }
+    background-color: var(--bg-highlight);
+  }
+}
 
-    .section_box_year h1 {
-      color: var(--text-highlight) !important;
-      transition: all 0.3s;
-    }
+@media (max-width: 576px) {
+  .experience_item {
+    margin-left: 2rem;
+    padding: 1.25rem;
+  }
 
-    .section_box_year p {
-      color: var(--text-primary) !important;
-      transition: all 0.3s;
-    }
-
-    .section_box_info .section_box_badge_list .section_box_badge {
-      background-color: var(--bg-highlight);
-      transition: all 0.3s;
-    }
+  .period {
+    top: 1.25rem;
+    right: calc(100% + 0.5rem);
   }
 }
