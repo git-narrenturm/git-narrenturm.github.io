@@ -1,8 +1,8 @@
 {
   "section": [
     { "title": "Обо мне", "subtitle": "Кто я" },
+    { "title": "Технические навыки", "subtitle": "" },
     { "title": "Опыт работы", "subtitle": "" },
-    { "title": "Навыки", "subtitle": "" },
     { "title": "Языки", "subtitle": "Уровни" },
     { "title": "Профили", "subtitle": "Контакты" }
   ]
